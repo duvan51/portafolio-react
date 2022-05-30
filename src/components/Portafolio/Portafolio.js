@@ -5,10 +5,10 @@ import { useState } from "react";
 import info from "../servicesTabs/servicesData.js";
 import FilterBycomponent from "./FilterBycomponent.js";
 
-import _, { map } from "underscore"; //libreria para saber si un objeto esta vacio
+import _, { } from "underscore"; //libreria para saber si un objeto esta vacio
 
 export const Portafolio = () => {
-  const [data, setData] = useState([]);
+ 
   
   const [button, setButtom] = useState([]);
   const [proyectFilter, setProyectByFilter] = useState({});
@@ -17,7 +17,6 @@ export const Portafolio = () => {
   useEffect(() => {
     if (info) {
       setButtom(info); //enviamos la informacion de los botones que queremos
-      setData(info);
       setProyectByFilter(info[1])
    
     }
