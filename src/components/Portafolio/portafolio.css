@@ -123,7 +123,7 @@
 
 /*cambiarlo a un hover >> .proyectfronOne:hover */
 .proyectFrontOne:hover > .CardInfo{
-    background-color: rgba(0, 0, 0, 0.74);
+    background-color: var(--background-tarjets);
     display:flex !important;
     flex-direction: column;
     position:relative;

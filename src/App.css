@@ -9,6 +9,8 @@
   --background-primary:rgb(31, 34, 53); 
   --background-secondary:#32354a;
 
+  --background-tarjets:rgba(0, 0, 0, 0.74);
+
   --color-primary: white;
   --color-primaryTransparent: rgba(255, 255, 255, 0.123);
   --color-secondary:crimson;
@@ -24,6 +26,8 @@
   
   --background-primary:rgb(0, 0, 0); 
   --background-secondary:#24252c;
+
+  --background-tarjets:rgba(0, 0, 0, 0.74);
 
   --color-primary: white;
   --color-primaryTransparent: rgba(255, 255, 255, 0.123);
@@ -41,6 +45,8 @@
   --background-primary:rgb(255 86 185); 
   --background-secondary:#ff89f5;
 
+  --background-tarjets:rgba(184, 96, 255, 0.74);
+
   --color-primary: rgb(0, 0, 0);
   --color-primaryTransparent: rgba(0, 0, 0, 0.144);
   --color-secondary:rgb(121 18 206);
@@ -55,6 +61,8 @@
   
   --background-primary:rgb(255 255 255); 
   --background-secondary: #d2d2d2;
+
+  --background-tarjets:rgba(141, 163, 130, 0.644);
 
   --color-primary: black;
   --color-primaryTransparent: rgb(111 128 102 / 36%);

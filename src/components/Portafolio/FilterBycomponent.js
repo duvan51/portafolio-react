@@ -4,20 +4,8 @@ import { useEffect, useState } from "react";
 
 import image from "../images/pef.png";
 
-const FilterBycomponent = ({ proyectFilter }) => {
+const FilterBycomponent = ({ data }) => {
   
-    const [proyect, setProyects] = useState([]);
-
-  useEffect(() => {
- 
-        setProyects(proyectFilter.proyects);
-        console.log(proyectFilter.name)
-    
-  }, [proyectFilter]);
-
-
-
-
   const style = {
     backgroundImage: `url(${image})`,
   };
@@ -28,9 +16,9 @@ const FilterBycomponent = ({ proyectFilter }) => {
   
   return (
     <>
-    {proyect ? (
+    {data ? (
         <>
-        {  proyect.map((x) => {
+        {  data.map((x) => {
         return (
           <div className="proyectFrontOne" style={style} key={x.id}>
             <div className="cardName">

@@ -6,6 +6,7 @@ import info from "../servicesTabs/servicesData.js";
 import FilterBycomponent from "./FilterBycomponent.js";
 
 import _, { } from "underscore"; //libreria para saber si un objeto esta vacio
+import FilterComponents from "./FilterComponents.js";
 
 export const Portafolio = () => {
  
@@ -17,13 +18,13 @@ export const Portafolio = () => {
   useEffect(() => {
     if (info) {
       setButtom(info); //enviamos la informacion de los botones que queremos
-      setProyectByFilter(info[1])
-   
-    }
-  }, [info, proyectFilter]);
 
+    }
+  }, [info]);
   
+
  
+  
   return (
     <div className="sectionPortafolio">
       <div className="portafolio">
@@ -37,9 +38,8 @@ export const Portafolio = () => {
         <div className="line"></div>
         <div className="proyects">
           <div className="proyectsFilter">
-            <button onClick={() => console.log(button)}>All</button>
-            {button.map((b) => {
-              
+            <button onClick={() => setProyectByFilter({})}>All</button>
+            {info.map((b) => {
               return (
                 <button onClick={() => setProyectByFilter(b.proyects)} key={b.id}>
                   {b.name}
@@ -49,11 +49,11 @@ export const Portafolio = () => {
           </div>
           <div className="proyectsComplet">
                 <div className="proyectsFront" >
-                  {(_.isEmpty(proyectFilter) == 0) ? (
+                  {(_.isEmpty(proyectFilter) === false) ? (
                     <>
-                      <FilterBycomponent proyectFilter={proyectFilter} />
+                      <FilterBycomponent data={proyectFilter} />
                     </>
-                    ):console.log("cargando")                    
+                    ): info.map((x)=> <FilterComponents info={x.proyects} key={x.id} />)                    
                   }
                   
                 </div>
