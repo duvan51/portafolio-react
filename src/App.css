@@ -1,10 +1,98 @@
+
+
+
+:root,
+:root.purple {
+  --letter-title:'Concert One', cursive;
+  --letter-text:'Ubuntu', sans-serif;
+  
+  --background-primary:rgb(31, 34, 53); 
+  --background-secondary:#32354a;
+
+  --color-primary: white;
+  --color-primaryTransparent: rgba(255, 255, 255, 0.123);
+  --color-secondary:crimson;
+}
+.purple{
+  background-color:rgb(31, 34, 53);
+  color: crimson;
+}
+
+:root.dark {
+  --letter-title:'Concert One', cursive;
+  --letter-text:'Ubuntu', sans-serif;
+  
+  --background-primary:rgb(0, 0, 0); 
+  --background-secondary:#24252c;
+
+  --color-primary: white;
+  --color-primaryTransparent: rgba(255, 255, 255, 0.123);
+  --color-secondary:rgb(128 110 0);
+
+}
+.dark{
+  background-color: black;
+  color:rgb(128 110 0);
+}
+:root.pink {
+  --letter-title:'Concert One', cursive;
+  --letter-text:'Ubuntu', sans-serif;
+  
+  --background-primary:rgb(255 86 185); 
+  --background-secondary:#ff89f5;
+
+  --color-primary: rgb(0, 0, 0);
+  --color-primaryTransparent: rgba(0, 0, 0, 0.144);
+  --color-secondary:rgb(121 18 206);
+}
+.pink{
+  background-color:rgb(255 86 185);
+  color:rgb(121 18 206);
+}
+:root.ligth {
+  --letter-title:'Concert One', cursive;
+  --letter-text:'Ubuntu', sans-serif;
+  
+  --background-primary:rgb(255 255 255); 
+  --background-secondary: #d2d2d2;
+
+  --color-primary: black;
+  --color-primaryTransparent: rgb(111 128 102 / 36%);
+  --color-secondary:rgb(111 128 102);
+}
+.ligth{
+  background-color: white;
+  color:rgb(111 128 102);
+}
+
+
+
+/*-------------------------------------------*/
+.colors{
+  display:flex;
+  gap:10px;
+  height: 30px !important;
+  justify-content: center;
+  padding-top:2px;
+  padding-bottom:2px;
+}
+
+.colors>button{
+  cursor:pointer;
+  border:1px solid black;
+}
+
+
+/*------------------------------------------*/
+
 .App {
   text-align: center;
   margin: 0px;
-  height: 0px;
+  height: auto;
+  background-color:var(--background-primary);
 }
 .App-header {
-  background-color:rgb(31, 34, 53);
+  background-color:var(--background-primary);
   height: auto;
   display: flex;
   flex-direction: column;

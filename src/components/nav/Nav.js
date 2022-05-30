@@ -17,7 +17,7 @@ const Nav = ()=>{
                     </div>
                 </div>
                 <div className="menuNavbar">
-                    <i class="fi fi-br-list"></i>
+                    <i className="fi fi-br-list"></i>
                 </div>
             </div>
             <div className="navList">

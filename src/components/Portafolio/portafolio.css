@@ -1,0 +1,171 @@
+.sectionPortafolio{
+    width:100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom :100px;
+  
+    
+}
+.portafolio{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    align-items: center;
+    border: 1px solid black;
+    margin-left:40px;
+    margin-right:40px;
+
+}
+.portafolio > .portafolioProyect{
+    color: var(--color-primary);
+    padding:0px 22px 0px 22px;
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+}
+.portafolio> .portafolioProyect > h1{
+    font-family: var(--letter-title);
+    letter-spacing: 2px;;
+}
+
+
+
+
+
+/*menu filter proyects*/
+.proyectsComplet{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    width:100%;
+    height: auto;
+}
+
+.proyectsFront{
+    width:100%;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+}
+.proyectFrontOne{
+    width:100%;
+    height: auto;
+}
+
+.proyectsFilter{
+    margin-bottom:50px;
+    display:flex;
+    justify-content: center;
+    gap:8px;
+}
+.proyectsFilter>button{
+    width:65px;
+    height:40px;
+    border-radius: 5px;
+    border:2px solid var(--color-secondary);
+    background-color: rgba(0, 0, 0, 0);
+    cursor:pointer;
+    color:var(--color-secondary)
+}
+.proyectsFilter>button:hover{
+    background-color: var(--color-secondary);
+    color:var(--color-primary)
+}
+/*---------------------proyects ----------*/
+
+.proyectsComplet{
+    color:var(--color-primary)
+}
+.proyectsComplet > div {
+    width:100%;
+    display:flex;
+
+}
+.proyectsComplet > div > div{
+    width:350px;
+    height:350px;
+    border-radius:10px;
+
+}
+.proyectFrontOne {
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.proyectFrontOne > .cardName{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 100px 0 0;
+    border-color: var(--color-secondary) transparent transparent transparent;
+}
+.proyectFrontOne > .cardName > .cardNameTitle{
+    position:absolute;
+    margin-top:-80px;
+    width: 100px;
+    height: 40px;
+    transform : rotate(-45deg);
+    font-family: var(--letter-title);
+    font-size:15px;
+    font-weight: 15;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis
+    
+}
+
+.proyectFrontOne:hover > .cardName{
+    display:none;
+}
+
+
+/*cambiarlo a un hover >> .proyectfronOne:hover */
+.proyectFrontOne:hover > .CardInfo{
+    background-color: rgba(0, 0, 0, 0.74);
+    display:flex !important;
+    flex-direction: column;
+    position:relative;
+    width: 100%;
+    height: 100%;
+    border-radius:10px;
+    gap:20px;
+}
+ 
+.cardInfoText{
+    width:100%;
+    height: 20px;
+}
+.CardInfoImages{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap:10px;
+    margin-top:30px;
+    
+}
+.CardInfoImages > .CardInfoImag{
+    width:80%;
+    height: 50px;
+    display: flex;
+    gap:10px;
+  
+
+}
+.CardInfoImages > .CardInfoImag > img{
+    width:40px;
+    height: 40px;
+    border-radius:10px;
+
+
+}
+.cardIcon{
+    width:100%;
+    font-size:50px;
+    display:flex;
+    justify-content: flex-end;
+    margin-top:15px;
+    color:var(--color-secondary)
+}
