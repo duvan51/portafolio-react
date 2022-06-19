@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import Nav from '../components/nav/Nav.js'
 import MainOne from '../components/body/MainOne.js'
 import MainServices from '../components/body/MainServices';
