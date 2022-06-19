@@ -1,32 +1,40 @@
-import './mainOne.css'
+import './mainOne.css';
+import servicesDataInfo from '../servicesTabs/servicesDataInfo';
+import Redes from '../redes/redes.js'
+import image from '../images/pef.png'
+
+import { useTranslation } from 'react-i18next';
 
 const MainOne =()=>{
+
+    const {t, i18n} = useTranslation(); 
+    const nameUser = localStorage.getItem('user');
+
     return (
-        <div className="mainOne">
-            <div className="nameFondo">
-                <h1 className="Namefondo">Duvan APonte</h1>
-                <div className="mainOneContenido">
-                    <div className="mainOneContenidoRedes">
-                        <ul className="listRedes">
-                            <li><i className="fi fi-brands-linkedin"></i></li>
-                            <li><i className="fi fi-brands-facebook"></i></li>
-                            <li><i className="fi fi-brands-whatsapp"></i></li>
-                            <li><i className="fi fi-brands-github"></i></li>
-                            <li><i className="fi fi-sr-phone-call"></i></li>
-                        </ul>
-                    </div>
-                    <div className="mainOneContenidoName">
-                        <h2>i am Duvan Aponte</h2>
-                    </div>
-                    <div className="mainOneContenidoDescripcion">
-                        <p>I'm duvan aponte, full stack web developer, eager to learn and with different projects on the table</p>      
-                    </div>
-                    <div className="mainOneContenidoOpciones">
-                        <div> mi portafolio </div>
-                        <div> videos </div>
+        <div className="mainOne" id="mainone">
+            <div className="mainOne-container">
+                <div className="nameFondo">
+                    <h1 className="Namefondo">{servicesDataInfo.first_name} {servicesDataInfo.last_name}</h1>
+                    <div className="mainOneContenido">
+                        <Redes />
+                        <div className="welcome">{t('mainOne.mainOneWelcome')} {nameUser}</div>
+                        <div className="mainOneContenidoName">
+                            <h2>{t('mainOne.mainOneName')} {servicesDataInfo.first_name} {servicesDataInfo.last_name}</h2>
+                        </div>
+                        <div className="mainOneContenidoDescripcion">
+                            <p>{t('mainOne.mainOneDescription')}</p>      
+                        </div>
+                        <div className="mainOneContenidoOpciones">
+                            <div> {t('mainOne.mainOneButtonMyPortafolio')} </div>
+                            <div> {t('mainOne.mainOneButtonMyVideos')} </div>
+                        </div>
                     </div>
                 </div>
+                <div className="mainOnephoto">
+                    <img src={image} alt='' />
+                </div>
             </div>
+            
         </div>
     )    
 }

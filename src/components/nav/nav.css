@@ -4,94 +4,112 @@
 /*iconos */
 @import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
 
+
+:root{
+    --medida-menu:329px;
+}
+
+
 .navComplet{
     width: 100%;
     height: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     color:var(--color-primary);
+    background-color: var(--background-primary);
+    
 }
 .nav{
     width: 100%;
     height: 90px;
     display:flex;
+    justify-content: space-around;
+   
+   
+    
+    /*----------------- aqui vamos a aumentar el margin bottom--------*/
+    
 }
 .nav>div:nth-child(1){
-    width: 300px;
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-/* beginning name */
-.name{
-
-    display:flex;
-    font-weight: bold;
-    font-family: 'Fredoka One', cursive;
-}
-.name> div:nth-child(1){
-    font-size: 3em;
-    color:var(--color-secondary);
-
-}
-.name> div:nth-child(2){
-    font-size: 1em;
-    color:rgb(104, 104, 104)
-
-}
-.name> div:nth-child(3){
-    font-size: 3em;
-    color:rgb(255, 213, 3)
-
-}
-.name> div:nth-child(4){
-    font-size: 3em;
-    color:rgb(44, 7, 14)
-
-}
-.name> div:nth-child(5){
-    font-size: 1em;
-    color:var(--color-secondary);
-
+    justify-content: flex-start;
 }
 
-/*end name */
 .nav>div:nth-child(2){
-    width:150px;
+    width:200px;
     font-size:40px;
     display:flex;
     justify-content: flex-end;
     align-items: center;
     cursor:pointer;
 }
+.nav>div:nth-child(2)>i{
+    width:60px;
+    height: 60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav>div:nth-child(2)>i:hover{
+    color:var(--color-secondary);
+    border-radius:30px;
+    border:var(--color-secondary);
+    border:solid 1px;
+    background-color:var(--background-secondary);
+}
+
+/*-------------------------------------------------------------*/
+/*                    menu                               */
 
 
 .navList{
-    display:none;
-    background-color:#32354a;
+    display:flex; /*display flex*/
+    background-color:var(--background-primary);
     margin-left:20px;
     margin-right:20px;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-bottom:10px;
+    width:100%;
+    top:110px;
+    justify-content: center;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
 
 }
 .navList>ul{
-    width:100%;
+    width:80%;
+    background-color: var(--background-secondary);
     height:100%;
     display:flex;
     flex-direction: column;
     align-items: flex-start;
+    gap:10px;
+    font-family: var(--letter-title);
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
+    padding-top:15px;
 }
 
-.navList>ul>li{
-    list-style: none;
+.navList>ul>a{
     width:80%;
     display:flex;
     justify-content: flex-start;
     cursor: pointer;
     border-bottom: 1px solid var(--color-primary);
-    margin-bottom: 5px;   
+    margin-bottom: 10px;
+    padding-bottom:10px;
+    font-size:20px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    color:var(--color-primary)
 }
-.navList>ul>li:hover{
+.navList>ul>a:hover{
     color:var(--color-secondary);
 }
 
@@ -99,7 +117,90 @@
 
 
 @media screen and (min-width:767px){
-  
+    .navComplet{
+        display:flex;
+        flex-direction: row;
+        width:100%;
+
+    }
+    .navComplet>div:nth-child(1){
+        width:100px;
+        display:flex;
+
+        
+    }
+    .navComplet>div:nth-child(1)>.nameLog{
+        display: flex;
+        justify-content: center;
+    }
+
+    .navComplet>div:nth-child(2){
+        width:auto;
+        position: relative;
+    }
+
+    .menuNavbar{
+        display:none !important;
+    }
+    
+    .navList{
+        display:flex; /*display flex*/
+        top:0px;
+        width:auto;
+        
+        
+    }
+    .navList>ul{
+        width:100%;
+        padding-left:10px;
+        height:100%;
+        padding-right: 10px;
+        display:flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap:10px;
+        font-family: var(--letter-title);
+        padding-top:0px;
+        border-radius:0px;
+        background:none;
+    }
+    
+    .navList>ul>a{
+        list-style: none;
+        display:flex;
+        justify-content: flex-start;
+        cursor: pointer;
+        border-bottom: 0;
+        font-size:20px;
+        padding-top:5px;
+        height: 100%;
+        justify-content: center;
+       
+    }
+    .navList>ul>a:hover{
+        color:var(--color-secondary);
+        background-color: var(--background-secondary);
+        height: 80%;
+    }
+    @media screen and (min-width:1024px){
+        .App-header{
+            width:100%;
+            display:flex;
+            align-items: center;
+        }
+        .navComplet{
+            width:80%;
+            display:grid;
+            grid-template-columns: 10% 90%;
+            gap:10px;
+        }
+        
+    }
+
+
+
+
+
     
   }
   

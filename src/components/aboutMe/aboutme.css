@@ -24,14 +24,14 @@
 } 
 /* start photo==================================*/
 
-.aboutme > .photo{
+.photo{
     width: 100%;
     height: auto;
     display:flex;
     justify-content: center;
 
 }
-.aboutme > .photo > .photoDecoration{
+.photo > .photoDecoration{
     width:auto;
     height: auto;
     display:flex;
@@ -61,7 +61,7 @@
 /*end photo====================================*/
 
 .aboutmeInfo{
-    width: 100%;
+    width: 90%;
     height: auto;
     padding: 0px 20px 0px 20px;
 }
@@ -76,7 +76,11 @@
     letter-spacing: 1px;
 }
 
-
+.aboutmeInfoPerson{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
 .aboutInfoPerson{
     width: 100%;
     display: flex;
@@ -101,4 +105,25 @@
     font-family: var(--letter-text);
     text-decoration: none;
     color: var(--color-primary);
+}
+
+
+
+.aboutmeInfoPhoto{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+
+
+
+@media screen and (min-width:1024px){
+    .aboutmeInfoPhoto{
+        width:80%;
+        display:flex;
+        flex-direction: row;
+        
+    }
+    
+
 }

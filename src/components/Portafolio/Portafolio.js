@@ -7,12 +7,15 @@ import FilterBycomponent from "./FilterBycomponent.js";
 
 import _, { } from "underscore"; //libreria para saber si un objeto esta vacio
 import FilterComponents from "./FilterComponents.js";
+import { useTranslation } from "react-i18next";
 
 export const Portafolio = () => {
  
   
   const [button, setButtom] = useState([]);
   const [proyectFilter, setProyectByFilter] = useState({});
+
+  const {t, i18n}= useTranslation();
 
 
   useEffect(() => {
@@ -22,18 +25,12 @@ export const Portafolio = () => {
     }
   }, [info]);
   
-
- 
-  
   return (
-    <div className="sectionPortafolio">
+    <div className="sectionPortafolio" id="portafolio">
       <div className="portafolio">
         <div className="portafolioProyect">
-          <h1>Portafolio Proyects</h1>
-          <div>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum standard dummy text.
-          </div>
+          <h1>{(t('mainProyects.proyectsTitle').toUpperCase())}</h1>
+          <div>{t('mainProyects.proyectsDescription')}</div>
         </div>
         <div className="line"></div>
         <div className="proyects">

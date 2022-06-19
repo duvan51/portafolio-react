@@ -18,7 +18,7 @@ const ServicesTabs = () => {
 
     const f = info.map((i)=> {
         return (
-            <div className="cardServices hover" key={i.id}>
+            <div className="cardServices hover"  key={i.id}>
                     <div className="cardLogo">
                         {i.icon}
                     </div>

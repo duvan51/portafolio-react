@@ -11,7 +11,6 @@
     flex-direction: column;
     gap:40px;
     align-items: center;
-    border: 1px solid black;
     margin-left:40px;
     margin-right:40px;
 
@@ -30,8 +29,14 @@
 
 
 
+/**/
+.proyects{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
 
-
+}
 /*menu filter proyects*/
 .proyectsComplet{
     display:flex;
@@ -58,15 +63,20 @@
     display:flex;
     justify-content: center;
     gap:8px;
+    width:100%;
 }
 .proyectsFilter>button{
-    width:65px;
+    width:auto;
     height:40px;
     border-radius: 5px;
     border:2px solid var(--color-secondary);
     background-color: rgba(0, 0, 0, 0);
     cursor:pointer;
-    color:var(--color-secondary)
+    color:var(--color-secondary);
+    font-size:12px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 .proyectsFilter>button:hover{
     background-color: var(--color-secondary);
@@ -76,10 +86,12 @@
 
 .proyectsComplet{
     color:var(--color-primary)
+    
 }
 .proyectsComplet > div {
     width:100%;
     display:flex;
+    align-items: center;
 
 }
 .proyectsComplet > div > div{
@@ -168,4 +180,43 @@
     justify-content: flex-end;
     margin-top:15px;
     color:var(--color-secondary)
+}
+
+
+@media screen and (min-width:767px){
+    .portafolio{
+        width:90%;
+    }
+    .proyects{
+        width:100%;
+    }
+    .proyectsComplet{
+        width:100%;
+    }
+    .proyectsFront{
+        display: grid !important;
+        grid-template-columns: auto auto;
+
+    }
+    .proyectsFront>div{
+        width: auto !important;
+    }
+}
+@media screen and (min-width:1024px){
+    .proyects{
+        width:100%;
+        display: flex;
+        align-items: center;
+    }
+    .proyectsComplet{
+        width:80%;
+
+    }
+    .proyectsFront{
+        display: grid !important;
+        grid-template-columns: auto auto auto;
+
+    }
+    
+
 }

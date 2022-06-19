@@ -1,0 +1,96 @@
+.contact{
+    width: 100%;
+    height: auto;
+    display:flex;
+    justify-content: center;
+    background-color: var(--background-primary);
+    
+    
+}
+.form_contact{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    width:450px;
+    height: 100%;
+    margin-top:40px;
+    margin-bottom:40px;
+    padding-top:10px;
+    padding-bottom:10px;
+        
+    
+}
+.form_contact > .contact_title{
+    font-weight: bold;
+    margin-bottom:20px;
+}
+
+.form_contact>div{
+    display: flex;
+    color:var(--color-primary);
+    justify-content: space-between;
+    width: 100%;
+ 
+}
+
+/*----------------------------------*/
+.form_contact>div>input{
+    width:100%;
+    border-radius:6px;
+    background-color:var(--background-secondary);
+    color:var(--color-primary);
+    height:50px;
+    letter-spacing:3px;
+    font-size:17px;
+    border:none;
+    padding-left: 30px;
+    
+}
+.form_contact>div>textarea{
+    width:100%;
+    border-radius:6px;
+    background-color:var(--background-secondary);
+    color:var(--color-primary);
+    height: 90px;
+    border:none;
+    letter-spacing:3px;
+    font-size:17px;
+    padding-left: 30px;
+    padding-top:12px;
+  
+}
+.form_contact>button{
+    width:200px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid var(--color-secondary);
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    color: var(--color-secondary);
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+.form_contact>button:hover{
+    background-color:var(--color-secondary);
+    color: var(--color-primary);
+}
+
+.res{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    
+    
+}
+.respuesta{
+    width:300px;
+    height: 300px;
+    background: var(--background-secondary);
+    margin-bottom:20px;
+}
+.respuesta>p{
+    color:var(--color-primary);
+}

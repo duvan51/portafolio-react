@@ -2,18 +2,19 @@ import React from 'react'
 import ServicesTabs from '../servicesTabs/ServicesTabs'
 import './mainServices.css'
 
+import { useTranslation } from 'react-i18next';
+
 const MainServices = () => {
-    
+    const{t, i18n}=useTranslation();
     
   
   return (
     <>
-        <div className="servicesInfo">
-            <div className="servicesInfoTitle">SERVICES</div>
-            <div className="servicesInfoTitle">My Services</div>
+        <div className="servicesInfo" id="services">
+            <div className="servicesInfoTitle">{(t('mainServices.mainService')).toUpperCase()}</div>
+            <div className="servicesInfoTitle">{t('mainServices.mainServiceTitle')}</div>
             <div className="servicesInfoPharraf">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum standard dummy text.
+               {t('mainServices.mainServiceDescription')}
             </div>
             <div className="line"></div>
         </div>

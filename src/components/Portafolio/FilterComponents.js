@@ -20,8 +20,6 @@ const FilterComponents = ({info}) => {
     display: "none",
   };
 
-
-
   return (
     <>
     {data ? (

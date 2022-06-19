@@ -1,7 +1,7 @@
 
 
 .cardServices{
-    width:400px;
+    width:auto;
     height: 200px;
     background-color:var(--background-secondary);
     color:var(--color-primary)
@@ -50,4 +50,9 @@
     font-size:18px;
     text-align:center;   
     font-family: var(--letter-text);
+}
+
+
+@media screen and (min-width:767px){
+
 }
