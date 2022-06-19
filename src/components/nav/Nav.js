@@ -9,7 +9,7 @@ const Nav = ()=>{
     
     
 
-    const {t, i18n} = useTranslation();   
+    const {t} = useTranslation();   
     
     
     

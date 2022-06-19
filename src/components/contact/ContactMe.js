@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 
 const ContactMe = () => {
 
-    const {t, i18n} = useTranslation(); 
+    const {t} = useTranslation(); 
     
 
 

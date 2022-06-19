@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next'
 
 export const AboutMe = () => {
 
-    const {t, i18n}= useTranslation();
+    const {t}= useTranslation();
 
       return (
     <div className="aboutme" id="aboutme">

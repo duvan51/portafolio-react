@@ -14,6 +14,7 @@ const ServicesTabs = () => {
             setDatos(info)
         }
     },[info])
+    console.log(datos)
     
 
     const f = info.map((i)=> {

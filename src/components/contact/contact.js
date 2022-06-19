@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 
 function ContactForm() {
 
-  const {t, i18n} = useTranslation();
+  const {t} = useTranslation();
 
 
   const [state, handleSubmit] = useForm("xknyegez");

@@ -15,7 +15,7 @@ export const Portafolio = () => {
   const [button, setButtom] = useState([]);
   const [proyectFilter, setProyectByFilter] = useState({});
 
-  const {t, i18n}= useTranslation();
+  const {t}= useTranslation();
 
 
   useEffect(() => {
@@ -24,6 +24,7 @@ export const Portafolio = () => {
 
     }
   }, [info]);
+  console.log(button)
   
   return (
     <div className="sectionPortafolio" id="portafolio">

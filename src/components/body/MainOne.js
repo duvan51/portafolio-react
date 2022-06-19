@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 
 const MainOne =()=>{
 
-    const {t, i18n} = useTranslation(); 
+    const {t} = useTranslation(); 
     const nameUser = localStorage.getItem('user');
 
     return (

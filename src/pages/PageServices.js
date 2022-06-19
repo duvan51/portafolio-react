@@ -41,7 +41,7 @@ const Body = () => {
   /*   ------   lenguajes   ------- */ 
  // !guardar idioma con el localstorage
   const [buttonLng, setButtonLng] = useState(false);
-    const {t, i18n}= useTranslation();
+    const {i18n}= useTranslation();
   
     const changeLanguage = (lng) => {  
         localStorage.setItem('idioma', lng);
