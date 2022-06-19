@@ -9,6 +9,10 @@
     --medida-menu:329px;
 }
 
+.App-header{
+    position:fixed;
+    z-index:3;
+}
 
 .navComplet{
     width: 100%;
@@ -25,6 +29,7 @@
     height: 90px;
     display:flex;
     justify-content: space-around;
+    
    
    
     
@@ -53,6 +58,13 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    border-radius:30px;
+    border:solid 1px !important;
+    border:var(--color-primary);
+
+
+    /*! aqui vamos a cambiar algunas cosas*/
+   
 
 }
 .nav>div:nth-child(2)>i:hover{
@@ -70,16 +82,14 @@
 .navList{
     display:flex; /*display flex*/
     background-color:var(--background-primary);
-    margin-left:20px;
-    margin-right:20px;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-bottom:10px;
     width:100%;
-    top:110px;
+    
     justify-content: center;
-    border-bottom-left-radius:30px;
-    border-bottom-right-radius:30px;
+    position:relative;
+
 
 }
 .navList>ul{
@@ -87,27 +97,30 @@
     background-color: var(--background-secondary);
     height:100%;
     display:flex;
+    justify-content: center;
     flex-direction: column;
-    align-items: flex-start;
-    gap:10px;
+    align-items: center;
     font-family: var(--letter-title);
-    border-bottom-left-radius:30px;
-    border-bottom-right-radius:30px;
+    padding:0px;
+    margin: 0px;
     padding-top:15px;
+    padding-bottom: 10px;
+    
+    
 }
 
 .navList>ul>a{
     width:80%;
+    height: 40px;
     display:flex;
     justify-content: flex-start;
     cursor: pointer;
     border-bottom: 1px solid var(--color-primary);
-    margin-bottom: 10px;
-    padding-bottom:10px;
     font-size:20px;
     letter-spacing: 1.5px;
     text-decoration: none;
-    color:var(--color-primary)
+    color:var(--color-primary);
+    align-items: center;
 }
 .navList>ul>a:hover{
     color:var(--color-secondary);

@@ -15,6 +15,12 @@ const Nav = ()=>{
     
     /** button del menu  */
     const [buttonMenu, setbuttonMenu] = useState(0);
+    /* variabe global para accionar varias cosas*/
+    localStorage.setItem('button',buttonMenu);
+    
+    
+
+
     const [screenwidthMenu, setscreenwidthMenu] = useState(window.innerWidth);
     
     useEffect(()=>{
@@ -42,7 +48,7 @@ const Nav = ()=>{
             {(buttonMenu || screenwidthMenu > 767 )&& (
                 <div className="navList" id="res">
                     <ul>    
-                            <a href="#mainone">{(t('headersMenu.home')).toUpperCase()}</a> {/* interpolamos y convertimos a mayuscula  */}
+                            <a href="#mainone">{(t('headersMenu.home')).toUpperCase()} </a> {/* interpolamos y convertimos a mayuscula  */}
                             <a href="#services" >{(t('headersMenu.menuServices')).toUpperCase()}</a>
                             <a href="#aboutme">{(t('headersMenu.menuAbout')).toUpperCase()}</a>
                             <a href="#portafolio">{(t('headersMenu.menuProyects')).toUpperCase()}</a>

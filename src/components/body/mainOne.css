@@ -6,7 +6,16 @@
 @import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
 @import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
 
+
+#menu-active{
+    top:100px;
+}
+
+
+
+
 .mainOne{
+    margin-top:120px;
     width: 100%;
     height: auto;
     background-color:var(--background-secondary);

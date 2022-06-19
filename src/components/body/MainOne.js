@@ -10,6 +10,10 @@ const MainOne =()=>{
     const {t} = useTranslation(); 
     const nameUser = localStorage.getItem('user');
 
+    const active = (localStorage.getItem('button'));
+
+   
+
     return (
         <div className="mainOne" id="mainone">
             <div className="mainOne-container">

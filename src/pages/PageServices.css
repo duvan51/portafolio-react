@@ -92,6 +92,13 @@
     margin: 0px;
     height: auto;
     background-color:var(--background-primary);
+    overflow: visible !important;
+    
+    
+  }
+  header{
+    position: sticky;
+    top:0;
     
     
   }
@@ -102,9 +109,10 @@
     flex-direction: column;
     color: black;
     width: 100%;
-    position: sticky;
-    top:0px;
-    z-index:2;
+    
+   
+    
+    
   }
   .AppHeadersColorsTranslation{
     width:100%;
