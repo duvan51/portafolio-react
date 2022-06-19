@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import image from "../images/pef.png";
 
 
-const FilterComponents = ({info}) => {
+const FilterComponents = ({infor}) => {
 
   const[data, setData] =useState([])
   
   
   useEffect(()=>{
-    setData(info)
-    },[info])
+    setData(infor)
+    },[infor])
 
 
 

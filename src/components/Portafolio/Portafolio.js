@@ -36,7 +36,7 @@ export const Portafolio = () => {
         <div className="line"></div>
         <div className="proyects">
           <div className="proyectsFilter">
-            <button onClick={() => setProyectByFilter({})}>All</button>
+            <button onClick={() => setProyectByFilter(0)}>All</button>
             {info.map((b) => {
               return (
                 <button onClick={() => setProyectByFilter(b.proyects)} key={b.id}>
@@ -51,7 +51,7 @@ export const Portafolio = () => {
                     <>
                       <FilterBycomponent data={proyectFilter} />
                     </>
-                    ): info.map((x)=> <FilterComponents info={x.proyects} key={x.id} />)                    
+                    ): info.map((x)=> <FilterComponents infor={x.proyects} key={x.id} />)                    
                   }
                   
                 </div>
