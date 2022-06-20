@@ -11,6 +11,7 @@ import React from '../images/react.png'
         //! front
 import pokeApi from '../images/pokeApi.png'
 import qotesMachines from '../images/qotesMachines.png'
+import ecomerceJoyas from '../images/ecommerceJoyas.png'
 
 const data = [
     {
@@ -25,6 +26,13 @@ const data = [
                 "images":[Css, Html, Js, React],
                 "description": "consumo de api pokemon, con rutas. siguiendo y optimizando el codigo para mejorar la interactividad del usuario",
                 "fondo": pokeApi
+            },
+            {
+                "id":3,
+                "name": "Ecomerce of joyas",
+                "images":[Css, Html, Js, React],
+                "description": "consumo de api Rest de heroku, creacion de usuarios, compra de cualquier joya, filtro egun categoria.. utilizando axios",
+                "fondo": ecomerceJoyas 
             },
             {
                 "id":4,
