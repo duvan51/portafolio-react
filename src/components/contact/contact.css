@@ -79,18 +79,38 @@
 }
 
 .res{
+    margin-top: 50px;
     width: 100%;
     display:flex;
     justify-content: center;
+    align-items: center;
     
     
 }
 .respuesta{
-    width:300px;
+    width:95%;
     height: 300px;
     background: var(--background-secondary);
     margin-bottom:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
 }
 .respuesta>p{
     color:var(--color-primary);
+    font-size: 30px;
+    color: var(--color-secondary);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.respuesta>div{
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+@media screen and (min-width:1024px){
+    .res{
+        width:909px;
+    }
 }

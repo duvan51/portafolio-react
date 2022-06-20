@@ -13,9 +13,7 @@ const FilterComponents = ({infor}) => {
 
 
 
-  const style = {
-    backgroundImage: `url(${image})`,
-  };
+  
   const styhove = {
     display: "none",
   };
@@ -25,6 +23,9 @@ const FilterComponents = ({infor}) => {
     {data ? (
         <>
         {  data.map((x) => {
+        const style = {
+          backgroundImage: `url(${x.fondo})`,
+        };
         return (
           <div className="proyectFrontOne" style={style} key={x.id}>
             <div className="cardName">
@@ -32,7 +33,7 @@ const FilterComponents = ({infor}) => {
             </div>
             <div className="CardInfo" style={styhove}>
               <h2 className="CardInfoTitle">{x.name}</h2>
-              <div className="cardInfoText">sakjnskjsa ahasbjabshja</div>
+              <div className="cardInfoText">{x.description}</div>
               <div className="CardInfoImages">
                 <div>Tecnologias ussed</div>
                 <div className="CardInfoImag">

@@ -13,11 +13,12 @@ function ContactForm() {
 
   const [state, handleSubmit] = useForm("xknyegez");
   const nameUser = localStorage.getItem('user')
-  if (state.succeeded) {
+  if (state.succeeded) {  {/**state.succeeded */}
       return (
         <div className="res">
           <div className="respuesta">
-            <p>Thanks for joining!</p>
+            <p>Thanks {nameUser} </p>
+            <div>your message has been sent, I will contact you soon </div>
           </div>
         </div>
       );
@@ -74,7 +75,7 @@ function ContactForm() {
           <textarea
             id="message"
             name="message"
-            placeholder={t('contactMe.contactQr')}
+            placeholder={t('contactMe.contactInputMessageHover')}
           />
         </div>
         

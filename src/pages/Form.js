@@ -32,12 +32,12 @@ const Form =()=> {
     
     <div className="App-a">
         <form className="form" onSubmit={handleSubmit(onSubmit)}>
-        <input {...register("firstName")} placeholder="First name" />
+        <input {...register("firstName")} placeholder="Name recrut,company or visitor" />
         <div>
           <select {...register("category")}>
-            <option value="">Select...</option>
-            <option value="A">Recruiter</option>
-            <option value="B">Visitant</option>
+            <option value="C">Visitant</option>
+            <option value="A">Company</option>
+            <option value="B">Recrutier</option>
           </select>
         <input type="submit" value="ingresar" className="login" />
       </div>     

@@ -4,7 +4,7 @@ import servicesDataInfo from '../components/servicesTabs/servicesDataInfo.js';
 
 
 i18next.use(initReactI18next).init({
-    lng: "es",
+    lng: "en",
     fallbackLng: "es",
     resources: {
         es:{
@@ -123,7 +123,7 @@ i18next.use(initReactI18next).init({
                     contactInputNameHover: "You Name",
                     contactInputEmailHover: "example@exapmle.com",
                     contactInputNumberHover: "+57 3130000000",
-                    contactInputMessageHover: "your message",
+                    contactInputMessageHover: "write us your message",
                     contactButton:"SEND",
                     contactQr: "scan to send message"
                   }

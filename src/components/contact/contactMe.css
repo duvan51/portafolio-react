@@ -119,7 +119,10 @@
         background:var(--background-secondary);
         width:auto;
         height: 150px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
+
     .contact{
         display:grid;
         grid-template-columns: 70% 20%;

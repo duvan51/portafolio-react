@@ -7,6 +7,11 @@ import React from '../images/react.png'
 
 
 
+/**images of the proyects */
+        //! front
+import pokeApi from '../images/pokeApi.png'
+import qotesMachines from '../images/qotesMachines.png'
+
 const data = [
     {
         "id": 1,
@@ -16,23 +21,17 @@ const data = [
         "proyects":[
             {
                 "id": 1,
-                "name": "FUNDACION ACUERDATE",
-                "images":[Css, Html, Js, React]
-            },
-            {
-                "id": 2,
-                "name": " front CONSUMO POKE API",
-                "images":[Css, Html, Js, React]
-            },
-            {
-                "id":3,
-                "name": "front ECOMMERCE JOYAS",
-                "images":[Css, Html, Js, React]
+                "name": "Red Pokemon",
+                "images":[Css, Html, Js, React],
+                "description": "consumo de api pokemon, con rutas. siguiendo y optimizando el codigo para mejorar la interactividad del usuario",
+                "fondo": pokeApi
             },
             {
                 "id":4,
-                "name": "front WATHER API",
-                "images":[Css, Html, Js, React]
+                "name": "Generateor of phrases",
+                "images":[Css, Html, Js, React],
+                "description": "consumo de api para generar frases en forma aleatoria con su repectivo Author",
+                "fondo": qotesMachines
             }
         ]
     },
@@ -45,24 +44,16 @@ const data = [
             {
                 "id": 1,
                 "name": "backend FUNDACION ACUERDATE DE MI",
-                "images":[Css, Html, Js, React]
+                "images":[Css, Html, Js, React],
+                "description": "",
+                "fondo": pokeApi
             },
             {
                 "id": 2,
                 "name": "backend CONSUMO POKE API",
-                "images":[Css, Html, Js, React]
-                
-            },
-            {
-                "id":3,
-                "name": "backedn ECOMMERCE JOYAS",
-                "images":[Css, Html, Js, React]
-                
-            },
-            {
-                "id":4,
-                "name": "backend WATHER API",
-                "images":[Css, Html, Js, React]
+                "images":[Css, Html, Js, React],
+                "description": "",
+                "fondo": pokeApi
                 
             }
         ]
@@ -76,22 +67,30 @@ const data = [
             {
                 "id": 1,
                 "name": "mobile FUNDACION ACUERDATE DE MI",
-                "images":[Css, Html, Js, React]
+                "images":[Css, Html, Js, React],
+                "description": "",
+                "fondo": pokeApi
             },
             {
                 "id": 2,
                 "name": "mobile CONSUMO POKE API",
-                "images":[Css, Html, Js, React]
+                "images":[Css, Html, Js, React],
+                "description": "",
+                "fondo": pokeApi
             },
             {
                 "id":3,
                 "name": "mobiel ECOMMERCE JOYAS",
-                "images":[Css, Html, Js, React]
+                "images":[Css, Html, Js, React],
+                "description": "",
+                "fondo": pokeApi
             },
             {
                 "id":4,
                 "name": "mobiel WATHER API",
-                "images":[Css, Html, Js, React]
+                "images":[Css, Html, Js, React],
+                "description": "",
+                "fondo": pokeApi
             }
         ]
     },
@@ -104,22 +103,9 @@ const data = [
             {
                 "id": 1,
                 "name": "full stack FUNDACION ACUERDATE DE MI",
-                "images":[Css, Html, Js, React]
-            },
-            {
-                "id": 2,
-                "name": "full stack CONSUMO POKE API",
-                "images":[Css, Html, Js, React]
-            },
-            {
-                "id":3,
-                "name": "full stack ECOMMERCE JOYAS",
-                "images":[Css, Html, Js, React]
-            },
-            {
-                "id":4,
-                "name": "full stack WATHER API",
-                "images":[Css, Html, Js, React]
+                "images":[Css, Html, Js, React],
+                "description": "",
+                "fondo": pokeApi
             }
         ]
     }
