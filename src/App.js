@@ -2,7 +2,7 @@ import './App.css';
 
 
 /** */
-import Pdf from './pdf/PdfBody'; 
+
 import PageServices from './pages/PageServices.js';
 import Form from './pages/Form';
 /** */
@@ -17,7 +17,7 @@ function App() {
     
       <Routes>
         {/* routes publics */}
-        <Route path="/pdf" element={<Pdf />}/>
+        {/*<Route path="/pdf" element={<Pdf />}/>*/ }
         <Route path="/services" element={<PageServices />} />
         <Route path="/" element={<Form />} />
       </Routes>

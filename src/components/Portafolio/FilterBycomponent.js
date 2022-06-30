@@ -36,7 +36,11 @@ const FilterBycomponent = ({ data }) => {
                   })}
                 </div>
               </div>
-              <div className="cardIcon">{x.icon}</div>
+              <a className="cardIcon" href={x.link} target="_blank">
+                <div className="iconLink">
+                    <i class="fi fi-sr-play"></i>
+                </div>
+              </a>
             </div>
           </div>
         );

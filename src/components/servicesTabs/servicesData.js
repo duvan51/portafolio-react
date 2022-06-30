@@ -12,6 +12,7 @@ import React from '../images/react.png'
 import pokeApi from '../images/pokeApi.png'
 import qotesMachines from '../images/qotesMachines.png'
 import ecomerceJoyas from '../images/ecommerceJoyas.png'
+import phrases from '../images/phrases.png'
 
 const data = [
     {
@@ -25,21 +26,25 @@ const data = [
                 "name": "Red Pokemon",
                 "images":[Css, Html, Js, React],
                 "description": "consumo de api pokemon, con rutas. siguiendo y optimizando el codigo para mejorar la interactividad del usuario",
-                "fondo": pokeApi
+                "fondo": pokeApi,
+                "link":"https://lively-florentine-5fed2c.netlify.app/"
+
             },
             {
                 "id":3,
                 "name": "Ecomerce of joyas",
                 "images":[Css, Html, Js, React],
                 "description": "consumo de api Rest de heroku, creacion de usuarios, compra de cualquier joya, filtro egun categoria.. utilizando axios",
-                "fondo": ecomerceJoyas 
+                "fondo": ecomerceJoyas,
+                "link": "https://ecommercejoyas.netlify.app/"
             },
             {
                 "id":4,
                 "name": "Generateor of phrases",
                 "images":[Css, Html, Js, React],
                 "description": "consumo de api para generar frases en forma aleatoria con su repectivo Author",
-                "fondo": qotesMachines
+                "fondo": phrases,
+                "link": "https://quotesmachineduvan.netlify.app/"
             }
         ]
     },
