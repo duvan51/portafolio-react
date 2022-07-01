@@ -6,8 +6,6 @@ import { useTranslation } from 'react-i18next';
 
 const MainServices = () => {
     const{t}=useTranslation();
-    
-  
   return (
     <>
         <div className="servicesInfo" id="services">
