@@ -5,7 +5,7 @@
   "dependencies": {
     "@flaticon/flaticon-uicons": "^1.7.0",
     "@formspree/react": "^2.2.5",
-    "@react-pdf/renderer": "^2.2.0",
+    "@react-pdf/renderer": "^2.3.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
