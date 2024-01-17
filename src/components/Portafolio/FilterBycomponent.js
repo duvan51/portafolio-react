@@ -1,9 +1,6 @@
 import React from "react";
 
 
-
-import image from "../images/pef.png";
-
 const FilterBycomponent = ({ data }) => {
   
   
