@@ -2,7 +2,10 @@ import Css from '../images/css.png'
 import Html from '../images/html.png'
 import Js from '../images/js.png'
 import React from '../images/react.png'
-
+import GoogleScript from '../images/googleScript.png'
+import Appsheet from '../images/appsheet.webp'
+import Wordpress from '../images/Wordpress.png'
+import Wocomerce from '../images/wocomerce.png'
 
 
 
@@ -13,6 +16,9 @@ import pokeApi from '../images/pokeApi.png'
 import qotesMachines from '../images/qotesMachines.png'
 import ecomerceJoyas from '../images/ecommerceJoyas.png'
 import phrases from '../images/phrases.png'
+import parking from '../images/parking.png'
+import aval from '../images/aval.png'
+import Electromusical from '../images/electromusical.png'
 
 const data = [
     {
@@ -119,6 +125,30 @@ const data = [
                 "images":[Css, Html, Js, React],
                 "description": "",
                 "fondo": pokeApi
+            },
+            {
+                "id": 2,
+                "name": "PARKING APPSHEET",
+                "images":[Appsheet, GoogleScript],
+                "description": "",
+                "fondo": parking,
+                "link": "https://www.youtube.com/watch?v=2s5ge7NTWi0"
+            },
+            {
+                "id": 3,
+                "name": "ELECTRICOS AVAL",
+                "images":[Wordpress, Wocomerce],
+                "description": "",
+                "fondo": aval,
+                "link": "https://electricosaval.com/"
+            },
+            {
+                "id": 3,
+                "name": "ELECTROMUSICAL",
+                "images":[Wordpress, Wocomerce],
+                "description": "",
+                "fondo": Electromusical,
+                "link": "https://electromusicaldelllano.com/"
             }
         ]
     }

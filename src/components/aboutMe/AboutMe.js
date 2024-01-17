@@ -30,7 +30,7 @@ export const AboutMe = () => {
                 <div> <div> {t('mainAboutMe.Name').toUpperCase()}</div> <div> {servicesDataInfo.first_name} {servicesDataInfo.last_name}</div> </div>
                 <div> <div> {t('mainAboutMe.Email').toUpperCase()}</div> <div> {servicesDataInfo.email}</div> </div>
                 <div> <div> {t('mainAboutMe.Phone').toUpperCase()} </div> <div> {servicesDataInfo.telephone} </div> </div>
-                <div> <div> {t('mainAboutMe.Linkendln').toUpperCase()} </div> <a href="https://www.linkedin.com/in/duvan-aponte-269738189"> @Duvan_Aponte</a> </div>
+                <div> <div> {t('mainAboutMe.Linkendln').toUpperCase()} </div> <a href="www.linkedin.com/in/duvan-aponte-ramirez-269738189"> @Duvan_Aponte</a> </div>
             </div>
             </div>
             
