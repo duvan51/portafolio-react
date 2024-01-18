@@ -127,6 +127,9 @@
     text-overflow: ellipsis
     
 }
+.proyectFrontOne:hover{
+    width:80px 4 !important;
+}
 
 .proyectFrontOne:hover > .cardName{
     display:none;
@@ -141,6 +144,7 @@
     position:relative;
     width: 100%;
     height: 100%;
+    
     border-radius:10px;
     gap:20px;
 }
@@ -218,8 +222,9 @@
         grid-template-columns: auto auto;
 
     }
-    .proyectsFront>div{
-        width: auto !important;
+    .proyectsFront>div:hover{
+        /*width: auto !important;*/
+        transform: scale(1.05)
     }
 }
 @media screen and (min-width:1024px){
