@@ -13,7 +13,6 @@ import Wocomerce from '../images/wocomerce.png'
 /**images of the proyects */
         //! front
 import pokeApi from '../images/pokeApi.png'
-import qotesMachines from '../images/qotesMachines.png'
 import ecomerceJoyas from '../images/ecommerceJoyas.png'
 import phrases from '../images/phrases.png'
 import parking from '../images/parking.png'

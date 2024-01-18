@@ -23,7 +23,7 @@ const Form =()=> {
     navigate('/services')
     }
 
-  },[data])
+  },[data, navigate])
 
 
 
