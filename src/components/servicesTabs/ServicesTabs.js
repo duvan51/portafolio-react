@@ -13,7 +13,7 @@ const ServicesTabs = () => {
         if(info){
             setDatos(info)
         }
-    },[info])
+    },[])
    console.log(datos)
     
 
