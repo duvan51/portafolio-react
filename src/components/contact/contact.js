@@ -13,7 +13,7 @@ function ContactForm() {
 
   const [state, handleSubmit] = useForm("xknyegez");
   const nameUser = localStorage.getItem('user')
-  if (state.succeeded) {  {/**state.succeeded */}
+  if (state.succeeded) {  
       return (
         <div className="res">
           <div className="respuesta">

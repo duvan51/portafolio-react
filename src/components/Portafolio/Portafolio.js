@@ -23,8 +23,10 @@ export const Portafolio = () => {
       setButtom(info); //enviamos la informacion de los botones que queremos
 
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [info]);
   console.log(button)
+  
   
   return (
     <div className="sectionPortafolio" id="portafolio">

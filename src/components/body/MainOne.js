@@ -12,6 +12,7 @@ const MainOne =()=>{
 
     const active = (localStorage.getItem('button'));
 
+    console.log(active)
    
 
     return (

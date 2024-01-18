@@ -43,7 +43,7 @@ const FilterComponents = ({infor}) => {
                 </div>
               </div>
                   {console.log(x.link)}
-              <a className="cardIcon" href={x.link} target="_blank">
+              <a className="cardIcon" href={x.link} target="_blank"  rel="noreferrer">
                 <div className="iconLink">
                     <i class="fi fi-sr-play"></i>
                 </div>
