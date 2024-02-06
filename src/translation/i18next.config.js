@@ -22,7 +22,7 @@ i18next.use(initReactI18next).init({
                     menuAbout: "conoceme",
                     menuSkills: "habilidades",
                     menuProyects: "proyectos",
-                    menuBlog: "Comentarios",
+                    menuBlog: "tutoriales",
                     menuContact: "contacto"
             
                 },

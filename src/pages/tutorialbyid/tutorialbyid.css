@@ -1,0 +1,83 @@
+.tutorialsVideos{
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+.tutorialsVideosVideo{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.accordion-item{
+    background-color: var(--background-primary) !important;
+    color: var(--color-primary) !important;
+}
+
+.tutorialsVideosVideoHeader{
+    color: var(--color-primary);
+}
+.tutorialsVideosVideoHeader>div:first-child{
+    font-family: var(--letter-title);
+    font-size: 35px;
+
+}
+.tutorialsVideosVideoHeader>div:nth-child(2){
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+}
+
+
+
+
+.cuadriculaVideos{
+    padding-top: 10px;
+    display: grid;
+    gap:10px;
+    grid-template-columns: auto auto; /* Tres columnas, la segunda es el doble de ancha que las otras */
+    grid-template-rows: auto ;
+}
+
+.cuadriculaVideos>div{
+    width: auto;
+    cursor:pointer;
+    color: var(--color-primary);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+.cuadriculaVideos>div>div>div{
+    display: flex;
+    flex-direction: column;
+
+}
+.videoIdCard{
+    width:322px;
+    border: 1px;
+    border-color: azure 1px solid;
+    
+}
+.videoIdCard div:first-child{
+    font-weight: bold;
+    font-family: var(--letter-title);
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+.videoIdCard div:nth-child(2){
+    font-family: var(--letter-text);
+    font-size: 12px;
+}
+/*  -- aqui inicia los videos ya vistos */
+
+/*-- aqui inican los videos que se estan reproduciendo*/
+.newClass{
+    color: rgb(56, 56, 56) !important;
+
+}
+.newClass>div{
+    border: 1px solid greenyellow;
+    opacity: 0.7;
+    
+}

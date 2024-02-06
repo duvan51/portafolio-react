@@ -1,0 +1,112 @@
+/*
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+*/
+
+.slick-dots {
+  bottom: 10px;
+  list-style: none;
+  gap:10px;
+  display: flex !important;
+  justify-content: center;
+}/*
+.slick-track{
+
+  display: flex;
+  width: auto !important;
+  gap: 20px;
+  transform: none;
+}
+*/
+.tutorialsVideos{
+
+}
+.slick-slider {
+  margin-bottom: 35px;
+}
+.cuadriculavideos{
+  margin-top:40px;
+  padding-left: 25px;
+  display: grid;
+  grid-template-columns: auto auto; /* Tres columnas, la segunda es el doble de ancha que las otras */
+  grid-template-rows: auto ;
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-content: center;
+ 
+
+}
+.cuadriculavideos>div{
+  cursor: pointer;
+}
+
+
+
+.cuadriculavideosTab{
+ 
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  gap:5px
+
+
+}
+.cuadriculavideosTab>div>img{
+
+  width: 150px;
+  height: 100px;
+
+}
+
+
+@media screen and (min-width:1024px){
+  /*
+  .slick-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .slick-track{
+    transform:none !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .slick-list{
+    width: 100%;
+  }*/
+  .tutorials{
+    width: 100%;
+
+  }
+  .tutorialsVideos{
+    display: grid;
+    grid-template-columns: 65% 30%;
+    justify-content: space-around;
+    
+  }
+
+  .cuadriculavideosTab{
+    background-color: green;
+    }
+
+
+}
+
+
+
+
+
+
+

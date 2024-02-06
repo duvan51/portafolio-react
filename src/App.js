@@ -4,6 +4,8 @@ import './App.css';
 /** */
 
 import PageServices from './pages/PageServices.js';
+import Tutorials from './pages/tutorials/Tutorials.js'
+import TutorialsId from './pages/tutorialbyid/TutorialbyId.js';
 import Form from './pages/Form';
 /** */
 
@@ -19,6 +21,8 @@ function App() {
         {/* routes publics */}
         {/*<Route path="/pdf" element={<Pdf />}/>*/ }
         <Route path="/services" element={<PageServices />} />
+        <Route  path="/tutorials" element={<Tutorials/>}/>
+        <Route  path="/tutorials/:id" element={<TutorialsId/>}/>
         <Route path="/" element={<Form />} />
       </Routes>
     </div>

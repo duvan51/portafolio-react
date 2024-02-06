@@ -3,7 +3,7 @@ import Logo from '../logo/Logo'
 
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
-
+import { Link } from 'react-router-dom'
 
 const Nav = ()=>{
     
@@ -11,7 +11,7 @@ const Nav = ()=>{
     
     const {t} = useTranslation();   
     
-    
+
     
     /** button del menu  */
     const [buttonMenu, setbuttonMenu] = useState(0);
@@ -53,7 +53,8 @@ const Nav = ()=>{
                             <a href="#aboutme">{(t('headersMenu.menuAbout')).toUpperCase()}</a>
                             <a href="#portafolio">{(t('headersMenu.menuProyects')).toUpperCase()}</a>
                             {/* eslint-disable jsx-a11y/anchor-is-valid */}
-                            <a>{(t('headersMenu.menuBlog')).toUpperCase()}</a>
+                            <a ><Link to="/tutorials" >{(t('headersMenu.menuBlog')).toUpperCase()}</Link></a>
+                            
                             {/* eslint-enable jsx-a11y/anchor-is-valid */}
                             <a href="#cont">{(t('headersMenu.menuContact')).toUpperCase()}</a>
                     </ul>
