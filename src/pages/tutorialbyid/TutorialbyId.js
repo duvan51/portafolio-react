@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import dataTutorials from '../tutorials/DataTutorials';
 
 import YouTube from 'react-youtube';
-import Slider from 'react-slick';
 import Accordion from 'react-bootstrap/Accordion';
 
 import './tutorialbyid.css';
@@ -70,16 +69,6 @@ const TutorialbyId = () => {
       return null; // Otra opción si el enlace no es lo suficientemente largo
     }
   });
-
-  /* aquí vamos a traer los videos por curso */
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
 
   const onVideoClick = (videoId) => {
     setSelectedVideo(videoId);

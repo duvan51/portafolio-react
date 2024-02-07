@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './VentanaVideo.css'
 import YouTube from 'react-youtube';
-import { act } from 'react-dom/test-utils';
+
 
 
 
@@ -13,14 +13,14 @@ const VentanaVideo = (props) => {
   const {videoSelect} = props;
 
   const objet = videoSelect
+
   
   // UseEffect se ejecuta una vez cuando el componente se monta
   useEffect(() => {
-    setenvVideo(videoSelect)
+    setenvVideo(objet)
   }, []);
 
-  console.log(envVideo)
-
+ 
 
 
 
