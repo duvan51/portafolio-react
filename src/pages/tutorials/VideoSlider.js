@@ -21,7 +21,7 @@ const VideoSlider = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [selectedCourse, setSelectedCourse] = useState(null);
 
-  const [VideoSelect, setVideoSelect]=useState({});
+  const [VideoSelect, setVideoSelect]=useState(null);
  
 
   const [activeTab, setActiveTab] = useState('');
@@ -58,15 +58,12 @@ const VideoSlider = () => {
 
   // UseEffect se ejecuta una vez cuando el componente se monta
   useEffect(() => {
-    // Verificar si hay tutoriales disponibles y si VideoSelect aún no está seleccionado
-    if (DataTutorials.length > 0 && !VideoSelect.id) {
-      // Establecer el primer video como seleccionado automáticamente
-      setVideoSelect(DataTutorials[0].tutorials[0]);
-    }
+   
+    setVideoSelect(DataTutorials[0].tutorials[0])
   }, [DataTutorials, VideoSelect]);
-
-  console.log(VideoSelect)
-  console.log(DataTutorials)
+ 
+  
+  
 
 
 /**end pestañas */
@@ -106,7 +103,7 @@ const VideoSlider = () => {
         ))}
     </Slider>
 
-
+    
 
     <Tabs
       defaultActiveKey={activeTab}

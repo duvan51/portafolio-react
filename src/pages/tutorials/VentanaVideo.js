@@ -1,19 +1,36 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import './VentanaVideo.css'
 import YouTube from 'react-youtube';
+import { act } from 'react-dom/test-utils';
 
 
 
 const VentanaVideo = (props) => {
+
+  const [envVideo, setenvVideo] = useState({});
+
   
   const {videoSelect} = props;
+
+  const objet = videoSelect
   
- 
+  // UseEffect se ejecuta una vez cuando el componente se monta
+  useEffect(() => {
+    setenvVideo(videoSelect)
+  }, []);
+
+  console.log(envVideo)
+
+
+
 
   const ObtenerIdDeLink=(link)=>{
 
-    const idOfLink = link.substring(32)
-    return idOfLink;
+   
+      const idOfLink = link.substring(32)
+      return idOfLink;
+    
+    
   }
   
       const opts = {
@@ -27,8 +44,13 @@ const VentanaVideo = (props) => {
         
       };
 
-      const VideoId = ObtenerIdDeLink(videoSelect.link)
-  
+      if(videoSelect){
+        const VideoId = ObtenerIdDeLink(videoSelect.link)  
+      } const VideoId = ""
+      
+
+      console.log(VideoId)
+
     return (
       
     <div className='ventanaVideo'>

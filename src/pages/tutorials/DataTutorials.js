@@ -5,13 +5,13 @@ import image from "./../../components/images/Wordpress.png"
 const DataTutorials = [
 
         {
-        "id": 1,
+        "id": 651,
         "name":"nodejs",
         "description":"aqui tendremos un tutorial sobre javascript",
         "icon": <i className="fi fi-br-layout-fluid"></i>,
         "tutorials":[
             {
-                "id": 1,
+                "id": 1898,
                 "name": "primera parte",
                 "images":image,
                 "description": "daremos una vista de como se va desarrollar el proyecto, dado que es un proyecto extenso ....",
@@ -20,7 +20,7 @@ const DataTutorials = [
 
             },
             {
-                "id": 2,
+                "id": 24,
                 "name": "segunda parte",
                 "images":image,
                 "description": "comenzaremos con cosas basicas como son la base de datos, kelks",
@@ -29,7 +29,7 @@ const DataTutorials = [
 
             },
             {
-                "id": 3,
+                "id": 36188,
                 "name": "tercera parte",
                 "images":image,
                 "description": "daremos una vista de como se va desarrollar el proyecto, dado que es un proyecto extenso ....",
@@ -41,14 +41,14 @@ const DataTutorials = [
         ]
         },
         {
-            "id": 2,
+            "id": 2555,
             "name":"Appsheet",
             "description":"aqui tendremos un tutorial sobre javascript",
             "fondo": image,
             "icon": <i className="fi fi-br-layout-fluid"></i>,
             "tutorials":[
                 {
-                    "id": 1,
+                    "id": 1899,
                     "name": "primera parte",
                     "images":image,
                     "description": "daremos una vista de como se va desarrollar el proyecto, dado que es un proyecto extenso ....",
@@ -57,7 +57,7 @@ const DataTutorials = [
     
                 },
                 {
-                    "id": 2,
+                    "id": 2774,
                     "name": "segunda parte",
                     "images":image,
                     "description": "comenzaremos con cosas basicas como son la base de datos, kelks",
@@ -66,7 +66,7 @@ const DataTutorials = [
     
                 },
                 {
-                    "id": 3,
+                    "id": 3987,
                     "name": "tercera parte",
                     "images":image,
                     "description": "daremos una vista de como se va desarrollar el proyecto, dado que es un proyecto extenso ....",
@@ -78,14 +78,14 @@ const DataTutorials = [
             ]
         },
         {
-            "id": 3,
+            "id": 3987,
             "name":"Wordpress",
             "description":"aqui tendremos un tutorial sobre javascript",
             "fondo": image,
             "icon": <i className="fi fi-br-layout-fluid"></i>,
             "tutorials":[
                 {
-                    "id": 1,
+                    "id": 15445,
                     "name": "primera parte",
                     "images":image,
                     "description": "daremos una vista de como se va desarrollar el proyecto, dado que es un proyecto extenso ....",
@@ -94,7 +94,7 @@ const DataTutorials = [
     
                 },
                 {
-                    "id": 2,
+                    "id": 2554,
                     "name": "segunda parte",
                     "images":image,
                     "description": "comenzaremos con cosas basicas como son la base de datos, kelks",
@@ -103,7 +103,7 @@ const DataTutorials = [
     
                 },
                 {
-                    "id": 3,
+                    "id": 34545,
                     "name": "tercera parte",
                     "images":image,
                     "description": "daremos una vista de como se va desarrollar el proyecto, dado que es un proyecto extenso ....",
@@ -115,14 +115,14 @@ const DataTutorials = [
             ]
         },
         {
-            "id": 4,
+            "id": 4555,
             "name":"Musica",
             "description":"aqui tendremos un tutorial sobre javascript",
             "fondo": image,
             "icon": <i className="fi fi-br-layout-fluid"></i>,
             "tutorials":[
                 {
-                    "id": 1,
+                    "id": 14553,
                     "name": "primera parte",
                     "images":image,
                     "description": "daremos una vista de como se va desarrollar el proyecto, dado que es un proyecto extenso ....",
@@ -131,7 +131,7 @@ const DataTutorials = [
     
                 },
                 {
-                    "id": 2,
+                    "id": 235,
                     "name": "segunda parte",
                     "images":image,
                     "description": "comenzaremos con cosas basicas como son la base de datos, kelks",
@@ -140,7 +140,7 @@ const DataTutorials = [
     
                 },
                 {
-                    "id": 3,
+                    "id": 36667,
                     "name": "tercera parte",
                     "images":image,
                     "description": "daremos una vista de como se va desarrollar el proyecto, dado que es un proyecto extenso ....",
