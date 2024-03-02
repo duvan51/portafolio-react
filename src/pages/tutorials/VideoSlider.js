@@ -5,6 +5,12 @@ import { Link } from "react-router-dom";
 import VentanaVideo from "./VentanaVideo.js"
 
 
+/* import de iconos */
+import { IconName } from "react-icons/cg";
+import { CgAddR } from "react-icons/cg";
+
+
+
 import './tutorials.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -13,27 +19,60 @@ import "slick-carousel/slick/slick-theme.css";
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
-import DataTutorials from "./DataTutorials";
+import { getTutorials, getTutorialsId } from '../../services/api.js';
 
 
 const VideoSlider = () => {
-  
+  const [tutorials, setTutorials] = useState([]) 
+
+  useEffect(()=> {
+    // Llama a la función de servicio para obtener productos
+    getTutorials()
+      .then(data => {
+        // Maneja los datos obtenidos
+        setTutorials(data)
+      })
+      .catch(error => {
+        // Maneja los errores
+        console.error(error);
+      });
+},[])
+
+const [tutorialsId, setTutorialsId] = useState([]) 
+
+useEffect(()=> {
+  // Llama a la función de servicio para obtener productos
+  getTutorialsId()
+    .then(data => {
+      // Maneja los datos obtenidos
+      setTutorialsId(data)
+     
+    })
+    .catch(error => {
+      // Maneja los errores
+      console.error(error);
+    });
+},[])
+
+
+
+
+
+
+
+
+
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [selectedCourse, setSelectedCourse] = useState(null);
 
-  const [VideoSelect, setVideoSelect]=useState(null);
+  const [VideoSelect, setVideoSelect]=useState({});
  
 
   const [activeTab, setActiveTab] = useState('');
   
-  
-
-  const videoIds = ['Zw0Chu4us6w', '--zzkapzbZQ', 'Zw0Chu4us6w']; // Reemplaza con tus IDs reales
-
-  const link = "https://www.youtube.com/watch?v=SKnAvkiE0JA"
 
   const renderCursos =()=>{
-    return DataTutorials.map(x => 
+    return tutorials.map(x => 
       <div key={x.id} onClick={()=> setSelectedCourse(x)}>
         {x.name}
       </div>
@@ -51,20 +90,18 @@ const VideoSlider = () => {
     setActiveTab(eventKey)
   }
     //verificar si no hay pestañas activas
-    if (!activeTab && DataTutorials.length > 0) {
-      setActiveTab(DataTutorials[0].name); // Establecer la primera pestaña como activa
+    if (!activeTab && tutorials.length > 0) {
+      setActiveTab(tutorials[0].name); // Establecer la primera pestaña como activa
     }
+    console.log(tutorials)
 
 
   // UseEffect se ejecuta una vez cuando el componente se monta
   useEffect(() => {
    
-    setVideoSelect(DataTutorials[0].tutorials[0])
-  }, [DataTutorials, VideoSelect]);
+    setVideoSelect(tutorials[0])
+  }, [tutorials, VideoSelect]);
  
-  
-  
-
 
 /**end pestañas */
   const settings = {
@@ -93,11 +130,11 @@ const VideoSlider = () => {
     <div className='tutorialsVideos'>
       
     <Slider {...settings}>
-        {videoIds.map((videoId) => (
-          <div key={videoId} onClick={() => onVideoClick(videoId)}>
+        {tutorialsId.map((videoId) => (
+          <div key={videoId.id} onClick={() => onVideoClick(videoId)}>
             <img
-              src={`https://img.youtube.com/vi/${videoId}/mqdefault.jpg`}
-              alt={`Thumbnail for video ${videoId}`}
+              src={`https://img.youtube.com/vi/${ObtenerIdDeLink(videoId.link)}/mqdefault.jpg`}
+              alt={`Thumbnail for video ${ObtenerIdDeLink(videoId.link)}`}
             />
           </div>
         ))}
@@ -111,22 +148,40 @@ const VideoSlider = () => {
       className="mb-3"
       justify
       onSelect={handleTabSelect}
-      >
-    { DataTutorials.map((x)=>( 
-      <Tab to={`/tutorials/${x.id}`} key={x.id} title={x.name} eventKey={x.name}>
-        <div className='cuadriculavideosTab'>
-          {x.tutorials.map((x) => (
-            
-              <div key={x.id} onClick={() => setVideoSelect(x)}>
-                <img
-                  src={`https://img.youtube.com/vi/${ObtenerIdDeLink(x.link)}/mqdefault.jpg`}
-                  alt={`Thumbnail for video ${ObtenerIdDeLink(x.link)}`}
-                />
-              </div>
-          ))}
-        </div>
-      </Tab>
-    ))}
+    >
+      {tutorials.map((x) => (
+  <Tab to={`/tutorials/${x.id}`} key={x.id} title={x.name} eventKey={x.name}>
+    <div className='cuadriculavideosTab'>
+      {x.tutorials_id.map((tutorialId) => {
+        // Buscar el tutorial correspondiente en tu lista de datos
+        const tutorial = tutorialsId.find(tutorial => tutorial.id === tutorialId);
+        
+        // Verificar si se encontró el tutorial
+        if (tutorial) {
+          
+          return (
+            <>
+            <div key={tutorial.id} onClick={() => onVideoClick(console.log("llendo course"))}>
+              <img
+                src={`https://img.youtube.com/vi/${ObtenerIdDeLink(tutorial.link)}/mqdefault.jpg`}
+                alt={`Thumbnail for video ${ObtenerIdDeLink(tutorial.link)}`}
+              />
+            </div>
+            </>
+          );
+        } else {
+          // Manejar el caso donde no se encontró el tutorial
+          return <div key={tutorialId}>Tutorial no encontrado</div>;
+        }
+      })}
+    </div>
+    <div className='irA'>
+      <Link to={`/tutorials/${x.id}`} onClick={() => console.log(x)}>
+        <div>Ir a curso</div><CgAddR />
+      </Link>
+    </div>
+  </Tab>
+))}
     </Tabs>
 
 
@@ -136,11 +191,11 @@ const VideoSlider = () => {
         </div>
       )}
       <div className='cuadriculavideos'>
-      {videoIds.map((videoId) => (
-          <div key={videoId} onClick={() => onVideoClick(videoId)}>
+      {tutorialsId.map((videoId) => (
+          <div key={videoId.id} onClick={() => onVideoClick(videoId)}>
             <img
-              src={`https://img.youtube.com/vi/${videoId}/mqdefault.jpg`}
-              alt={`Thumbnail for video ${videoId}`}
+              src={`https://img.youtube.com/vi/${ObtenerIdDeLink(videoId.link)}/mqdefault.jpg`}
+              alt={`Thumbnail for video ${ObtenerIdDeLink(videoId.link)}`}
             />
           </div>
       ))}
@@ -156,5 +211,4 @@ const VideoSlider = () => {
 };
 
 export default VideoSlider;
-
 

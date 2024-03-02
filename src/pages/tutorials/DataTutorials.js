@@ -112,7 +112,7 @@ const DataTutorials = [
     
                 },
     
-            ]
+            ] 
         },
         {
             "id": 4555,

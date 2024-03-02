@@ -6,62 +6,35 @@ import YouTube from 'react-youtube';
 
 
 const VentanaVideo = (props) => {
+  const { videoSelect } = props;
+  const idVideo = videoSelect ? videoSelect.link : '';
 
-  const [envVideo, setenvVideo] = useState({});
+  const ObtenerIdDeLink = (link) => {
+    if (link) {
+      return link.substring(32);
+    }
+    return '';
+  };
 
-  
-  const {videoSelect} = props;
+  const opts = {
+    height: '190',
+    width: '380',
+    playerVars: {
+      autoplay: 10,
+      startSeconds: 250,
+    },
+  };
 
-  const objet = videoSelect
+  const VideoId = idVideo ? ObtenerIdDeLink(idVideo) : '';
 
-  
-  // UseEffect se ejecuta una vez cuando el componente se monta
-  useEffect(() => {
-    setenvVideo(objet)
-  }, []);
-
- 
-
-
-
-  const ObtenerIdDeLink=(link)=>{
-
-   
-      const idOfLink = link.substring(32)
-      return idOfLink;
-    
-    
-  }
-  
-      const opts = {
-        height: '190',
-        width: '380',
-        playerVars: {
-          // https://developers.google.com/youtube/player_parameters
-          autoplay: 10,
-          startSeconds:250,
-        },
-        
-      };
-
-      if(videoSelect){
-        const VideoId = ObtenerIdDeLink(videoSelect.link)  
-      } const VideoId = ""
-      
-
-      console.log(VideoId)
-
-    return (
-      
+  return (
     <div className='ventanaVideo'>
-
-
-        <div className='ventanaVideoY'>
-          <YouTube videoId={VideoId} opts={opts} />
-        </div>
-    
+      <div className='ventanaVideoY'>
+        <YouTube videoId={VideoId} opts={opts} />
+      </div>
     </div>
-  )
-}
+  );
+};
+
 
 export default VentanaVideo
